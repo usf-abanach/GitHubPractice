@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Participle Flashcards</title>
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --ink: #1f2a44;
+      --muted: #5b6785;
+      --accent: #2f6fed;
+      --accent-dark: #1f54c4;
+      --good: #1f9d63;
+      --line: #dfe4f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    header { text-align: center; margin-bottom: 32px; }
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 20px;
+    }
+
+    h2 { font-size: 1.3rem; margin: 0 0 12px; }
+
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* Example flashcard */
+    .example {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    .flashcard {
+      flex: 1 1 200px;
+      max-width: 260px;
+      border: 2px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .flashcard .label {
+      display: block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .flashcard .word { font-size: 1.8rem; font-weight: 700; }
+    .flashcard.back { border-color: var(--good); }
+    .flashcard.back .word { color: var(--good); }
+
+    ol { margin: 0; padding-left: 1.4em; }
+    li { margin-bottom: 8px; }
+
+    .forms {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+    }
+
+    .forms th, .forms td {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+
+    .forms th { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+
+    .start {
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      font: inherit;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent);
+      border: none;
+      border-radius: 10px;
+      padding: 14px 40px;
+      cursor: pointer;
+    }
+
+    .button:hover { background: var(--accent-dark); }
+    .button:focus-visible { outline: 3px solid #9bb8f7; outline-offset: 2px; }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Past Participle Flashcards</h1>
+      <p class="subtitle">Practice English verbs. Remember the past participle.</p>
+    </header>
+
+    <section>
+      <h2>What is a past participle?</h2>
+      <p>
+        Every English verb has a <strong>past participle</strong> form. We use it with
+        <em>have</em>, <em>has</em>, and <em>had</em>.
+      </p>
+      <p><strong>Example:</strong> I <em>have</em> <strong>eaten</strong> breakfast.</p>
+      <table class="forms">
+        <thead>
+          <tr><th>Base verb</th><th>Simple past</th><th>Past participle</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>walk</td><td>walked</td><td><strong>walked</strong></td></tr>
+          <tr><td>go</td><td>went</td><td><strong>gone</strong></td></tr>
+          <tr><td>write</td><td>wrote</td><td><strong>written</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="note">Regular verbs add <strong>-ed</strong>. Irregular verbs change. You need to remember them!</p>
+    </section>
+
+    <section>
+      <h2>How to play</h2>
+      <ol>
+        <li>You see a card with a <strong>base verb</strong>, like <em>go</em>.</li>
+        <li>Think of the <strong>past participle</strong>.</li>
+        <li>Flip the card to check your answer.</li>
+        <li>Mark yourself: <strong>I knew it</strong> or <strong>I need practice</strong>.</li>
+        <li>Cards you miss come back again, so you can learn them.</li>
+      </ol>
+
+      <div class="example" aria-label="Example flashcard">
+        <div class="flashcard">
+          <span class="label">Front</span>
+          <span class="word">go</span>
+        </div>
+        <div class="flashcard back">
+          <span class="label">Back</span>
+          <span class="word">gone</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips</h2>
+      <ol>
+        <li>Say the word out loud.</li>
+        <li>Use it in a sentence: <em>"She has gone home."</em></li>
+        <li>Practice a little every day.</li>
+      </ol>
+    </section>
+
+    <div class="start">
+      <a class="button" href="games.html">Choose a Game</a>
+    </div>
+  </main>
+</body>
+</html>
